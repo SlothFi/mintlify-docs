@@ -1,0 +1,16 @@
+---
+title: Get Marketplace Stats
+api: "GET /api/marketplace/monsters/stats/overview"
+description: Get marketplace statistics including listings, volume, and recent sales
+---
+<Note>Requires `x-api-token` header.</Note>
+
+### Response Fields
+
+| Field | Description |
+|-------|-------------|
+| totalListings | Active listing count |
+| volume (30d) | 30-day trade volume |
+| salesCount | Total sales |
+| averagePrice | Average sale price |
+| recentSales | Array of recent sales |

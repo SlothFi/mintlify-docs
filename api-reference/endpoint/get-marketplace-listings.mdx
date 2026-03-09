@@ -1,0 +1,18 @@
+---
+title: Browse Marketplace Listings
+api: "GET /api/marketplace/monsters"
+description: Browse monster marketplace with filters
+---
+<ParamField query="page" type="number" default="1">Page number</ParamField>
+<ParamField query="pageSize" type="number" default="20">Results per page</ParamField>
+<ParamField query="sortBy" type="string" default="price_asc">Sort order</ParamField>
+<ParamField query="chainId" type="number">Filter by chain</ParamField>
+<ParamField query="minPrice" type="number">Minimum price filter</ParamField>
+<ParamField query="maxPrice" type="number">Maximum price filter</ParamField>
+<ParamField query="breedCode" type="string">Filter by breed</ParamField>
+<ParamField query="gender" type="string">Filter by gender</ParamField>
+<ParamField query="personality" type="string">Filter by personality</ParamField>
+<ParamField query="variant" type="string">Filter by variant</ParamField>
+<ParamField query="search" type="string">Search term</ParamField>
+
+<Note>Requires `x-api-token` header.</Note>

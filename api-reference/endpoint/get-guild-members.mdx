@@ -1,0 +1,20 @@
+---
+title: Get Guild Members
+api: "GET /api/data/guilds/{id}/members"
+description: Get paginated list of guild members
+---
+<ParamField path="id" type="string" required>Guild ID</ParamField>
+<ParamField query="page" type="number" default="1">Page number</ParamField>
+<ParamField query="limit" type="number" default="20">Results per page</ParamField>
+
+<Note>Requires `x-api-token` header.</Note>
+
+### Response Fields
+
+| Field | Description |
+|-------|-------------|
+| address | Member wallet address |
+| username | Display name |
+| role | Guild role |
+| joinedAt | Join timestamp |
+| updatedAt | Last update timestamp |

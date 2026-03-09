@@ -1,33 +1,33 @@
 ---
-title: 'Introduction'
-description: 'Example section for showcasing API endpoints'
+title: Introduction
+description: Getting started with the Spellborne Open API
 ---
 
-<Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
-</Note>
+Spellborne is a community built game where players can contribute in multiple ways, such as translating the game, contributing art and building tools.
 
-## Welcome
+Open API endpoints are now available to all users.
 
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
+## Base URL
 
-<Card
-  title="Plant Store Endpoints"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
->
-  View the OpenAPI specification file
-</Card>
+```
+https://api.spellborne.gg
+```
 
 ## Authentication
 
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
+Authenticated endpoints require an `x-api-token` header with your API key.
 
-```json
-"security": [
-  {
-    "bearerAuth": []
-  }
-]
+```bash
+curl -H "x-api-token: YOUR_API_KEY" https://api.spellborne.gg/api/data/monsters/123
 ```
+
+## Rate Limits
+
+| Tier | Limit |
+|------|-------|
+| Authenticated | 100 requests per 5 minutes per token |
+| Public | 100 requests per 5 minutes per IP |
+
+<Note>
+Developers can request the development team for access to specialized API endpoints with reduced traffic.
+</Note>

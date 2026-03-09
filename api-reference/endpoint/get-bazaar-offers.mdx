@@ -1,0 +1,13 @@
+---
+title: Get Bazaar Offers
+api: "GET /api/bazaar/offers"
+description: Get active buy orders on the bazaar
+---
+<ParamField query="page" type="number" default="1">Page number</ParamField>
+<ParamField query="limit" type="number" default="50">Results per page (max 100)</ParamField>
+<ParamField query="itemCode" type="string">Filter by item code</ParamField>
+<ParamField query="commodityType" type="string">Filter: `ITEM`, `SKIN`, or `TOOL`</ParamField>
+<ParamField query="minPrice" type="number">Minimum price</ParamField>
+<ParamField query="maxPrice" type="number">Maximum price</ParamField>
+
+<Note>Requires `x-api-token` header.</Note>

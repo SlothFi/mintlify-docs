@@ -1,0 +1,25 @@
+---
+title: Get Monster Data
+api: "GET /api/data/monsters/{id}"
+description: Get complete monster information including stats, moves, personality, and owner
+---
+<ParamField path="id" type="string" required>Monster ID</ParamField>
+
+<Note>Requires `x-api-token` header.</Note>
+
+### Response Fields
+
+| Field | Description |
+|-------|-------------|
+| breedName | Monster breed name |
+| level | Current level |
+| experience | Total XP |
+| stats | HP, SP, ATK, DEF, SPE |
+| innatePotential | IV values |
+| visiblePotential | Visible IVs |
+| moves | Learned moves |
+| personality | Monster personality |
+| originalHunter | First owner |
+| gender | Monster gender |
+| items | Held items |
+| owner | Current owner |

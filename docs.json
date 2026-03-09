@@ -1,68 +1,125 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Spellborne",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#7C3AED",
+    "light": "#A78BFA",
+    "dark": "#5B21B6"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/logo/logo.png",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Whitepaper",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "About",
             "pages": [
               "index",
-              "quickstart",
-              "development"
+              "design-pillars"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Gameplay",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "gameplay/overview",
+              "gameplay/battles",
+              "gameplay/farming-and-crafting",
+              "gameplay/mining-and-fishing",
+              "gameplay/breeding"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Economy",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "economy/overview",
+              "economy/marketplaces",
+              "economy/monsters",
+              "economy/glory-system",
+              "economy/guilds",
+              "economy/pvp"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "General",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "general/fair-play-rules",
+              "general/disclaimer"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "API Reference",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Getting Started",
             "pages": [
-              "api-reference/introduction"
+              "api-reference/introduction",
+              "api-reference/api-key"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Public Metadata",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "api-reference/endpoint/get-item",
+              "api-reference/endpoint/get-tool",
+              "api-reference/endpoint/get-friend",
+              "api-reference/endpoint/get-monster-metadata",
+              "api-reference/endpoint/get-character",
+              "api-reference/endpoint/get-apartment"
+            ]
+          },
+          {
+            "group": "Images",
+            "pages": [
+              "api-reference/endpoint/get-animated-pfps",
+              "api-reference/endpoint/get-static-pfps",
+              "api-reference/endpoint/get-overworld-atlas",
+              "api-reference/endpoint/get-gifs",
+              "api-reference/endpoint/get-monster-nft",
+              "api-reference/endpoint/get-monster-nfts",
+              "api-reference/endpoint/get-monster-nfts-page"
+            ]
+          },
+          {
+            "group": "Data (Authenticated)",
+            "pages": [
+              "api-reference/endpoint/get-monster",
+              "api-reference/endpoint/get-user",
+              "api-reference/endpoint/get-user-daycare",
+              "api-reference/endpoint/get-guild",
+              "api-reference/endpoint/get-guild-members"
+            ]
+          },
+          {
+            "group": "Marketplace (Authenticated)",
+            "pages": [
+              "api-reference/endpoint/get-marketplace-stats",
+              "api-reference/endpoint/get-marketplace-listing",
+              "api-reference/endpoint/get-marketplace-listings"
+            ]
+          },
+          {
+            "group": "Bazaar (Authenticated)",
+            "pages": [
+              "api-reference/endpoint/get-bazaar-sales",
+              "api-reference/endpoint/get-bazaar-offers",
+              "api-reference/endpoint/get-bazaar-listings",
+              "api-reference/endpoint/get-bazaar-stats"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Community",
+        "groups": [
+          {
+            "group": "Creators",
+            "pages": [
+              "community/creators",
+              "community/creator-kit"
             ]
           }
         ]
@@ -71,52 +128,48 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Play Spellborne",
+          "href": "https://www.spellborne.gg",
+          "icon": "gamepad"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Discord",
+          "href": "https://discord.gg/spellborne",
+          "icon": "discord"
         }
       ]
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/logo.png",
+    "dark": "/logo/logo.png"
   },
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Discord",
+        "href": "https://discord.gg/spellborne"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Play Now",
+      "href": "https://www.spellborne.gg"
     }
   },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+  "api": {
+    "baseUrl": "https://api.spellborne.gg",
+    "auth": {
+      "method": "key",
+      "name": "x-api-token"
+    }
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/spellbornegame",
+      "discord": "https://discord.gg/spellborne",
+      "instagram": "https://www.instagram.com/spellbornegame/",
+      "reddit": "https://www.reddit.com/r/Spellborne/"
     }
   }
 }

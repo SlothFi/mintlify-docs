@@ -1,0 +1,22 @@
+---
+title: Get User Data
+api: "GET /api/data/users/{address}"
+description: Get user profile including username, outfit, guild, squad, and skill levels
+---
+<ParamField path="address" type="string" required>User wallet address</ParamField>
+
+<Note>Requires `x-api-token` header. Squad data only available if user has data sharing enabled.</Note>
+
+### Response Fields
+
+| Field | Description |
+|-------|-------------|
+| address | Wallet address |
+| username | Display name |
+| equippedOutfit | Current outfit |
+| lastOnline | Last activity timestamp |
+| accountHealth | Account status |
+| currentGuild | Guild membership |
+| squad | Monster squad (if sharing enabled) |
+| stellarPass | Subscription status |
+| skills | Training, farming, crafting, breeding, mining, fishing levels |

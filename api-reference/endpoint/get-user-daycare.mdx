@@ -1,0 +1,12 @@
+---
+title: Get User Daycare
+api: "GET /api/data/users/{address}/daycare"
+description: Get paginated list of user's monsters in daycare
+---
+<ParamField path="address" type="string" required>User wallet address</ParamField>
+<ParamField query="page" type="number" default="1">Page number</ParamField>
+<ParamField query="limit" type="number" default="20">Results per page (max 100)</ParamField>
+<ParamField query="sortBy" type="string" default="createdAt">Sort field: `createdAt`, `experience`, or `innateBst` (total IVs)</ParamField>
+<ParamField query="sortOrder" type="string" default="desc">`asc` or `desc`</ParamField>
+
+<Note>Requires `x-api-token` header.</Note>

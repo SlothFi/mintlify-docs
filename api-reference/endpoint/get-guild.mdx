@@ -1,0 +1,21 @@
+---
+title: Get Guild Data
+api: "GET /api/data/guilds/{id}"
+description: Get guild information including name, description, experience, and activity logs
+---
+<ParamField path="id" type="string" required>Guild ID</ParamField>
+
+<Note>Requires `x-api-token` header.</Note>
+
+### Response Fields
+
+| Field | Description |
+|-------|-------------|
+| name | Guild name |
+| description | Guild description |
+| apartment | Guild apartment |
+| parentGuildId | Parent guild ID |
+| logo | Guild logo asset |
+| experience | Guild XP |
+| chestKeys | Available chest keys |
+| activityLogs | Recent activity |

@@ -1,0 +1,22 @@
+---
+title: Get Marketplace Listing
+api: "GET /api/marketplace/monsters/{orderId}"
+description: Get specific monster listing details
+---
+<ParamField path="orderId" type="string" required>Order ID</ParamField>
+<ParamField query="chainId" type="number" default="11155111">Blockchain chain ID</ParamField>
+
+<Note>Requires `x-api-token` header.</Note>
+
+### Response Fields
+
+| Field | Description |
+|-------|-------------|
+| orderId | Listing order ID |
+| chainId | Blockchain chain ID |
+| contract | Smart contract address |
+| tokenId | NFT token ID |
+| price | Amount and currency |
+| owner | Seller address |
+| metadata | Monster name, breed, level, stats, personality, items |
+| quantityRemaining | Available quantity |

@@ -1,0 +1,33 @@
+---
+title: API Key
+description: How to create and manage your API keys
+---
+
+Developers need an API key to access authenticated endpoints. You can have up to **5 active keys**.
+
+## Creating a Key
+
+<Steps>
+  <Step title="Open Settings">Access the settings menu and navigate to the "Developer" subsection</Step>
+  <Step title="Create Key">Click the button to create a new API key</Step>
+  <Step title="Name It">Assign a name to the key</Step>
+  <Step title="Copy It">Copy the generated key immediately</Step>
+</Steps>
+
+<Warning>
+Make sure to copy the API key once it has been created — the key will only be available until that popup is open.
+</Warning>
+
+## Usage
+
+Include the key in the `x-api-token` header:
+
+```bash
+curl -H "x-api-token: YOUR_API_KEY" https://api.spellborne.gg/api/data/users/0x123
+```
+
+## Access Tiers
+
+- **Standard** — Baseline rate limits (100 requests / 5 minutes)
+- **Stellar Pass** — Higher rate limits
+- **Developer Access** — Contact the team for specialized endpoints with reduced traffic
