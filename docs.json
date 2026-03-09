@@ -123,6 +123,36 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Changelog",
+        "groups": [
+          {
+            "group": "Changelog",
+            "pages": [
+              "changelog/changelog-1224",
+              "changelog/changlog-1021401",
+              "changelog/changelog-1020901",
+              "changelog/changelog-1020601",
+              "changelog/changelog-1020578",
+              "changelog/changelog-102240",
+              "changelog/changelog-102040",
+              "changelog/changelog-1010281",
+              "changelog/changelog-1010279",
+              "changelog/changelog-1010275-1",
+              "changelog/changelog-1010231",
+              "changelog/changelog-1010229",
+              "changelog/changelog-1010228-1",
+              "changelog/changelog-1010225",
+              "changelog/changelog-1010221-1",
+              "changelog/changelog-121",
+              "changelog/changelog-120",
+              "changelog/changelog-119-1",
+              "changelog/changelog-118-1",
+              "changelog/changelog-117-1"
+            ]
+          }
+        ]
       }
     ],
     "global": {
